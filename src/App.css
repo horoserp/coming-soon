@@ -1,0 +1,56 @@
+/* Universal Selector to remove default browser settings */
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Main";
+  src: url(../public/assets/fonts/JosefinSans-VariableFont_wght.ttf);
+  font-weight: 300 600;
+}
+
+/* CSS Variables */
+:root {
+  /* Primary */
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+
+  /* Neutral */
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+  /* Gradients */
+  --WhiteA: hsl(0, 0%, 100%);
+  --WhiteB: hsl(0, 100%, 98%);
+  --RedA: hsl(0, 80%, 86%);
+  --RedB: hsl(0, 74%, 74%);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Main";
+}
+
+/* Extra small devices [iPhone SE - 375](phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
+
+/* Medium devices [iPad Mini] (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
