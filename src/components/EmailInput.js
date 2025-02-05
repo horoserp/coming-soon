@@ -28,14 +28,12 @@ const EmailInput = () => {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <FormControl isValid={formik.touched.email && formik.errors.email}>
+      <FormControl isInvalid={formik.touched.email && formik.errors.email}>
         <FormLabel htmlFor="email">Email Address</FormLabel>
         <Input
           id="email"
           name="email"
           type="email"
-          // onChange={formik.handleChange}
-          // value={formik.values.email}
           {...formik.getFieldProps("email")}
         />
         <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
