@@ -1,9 +1,21 @@
 import React from "react";
 import { useFormik } from "formik";
+import * as Yup from "yup";
+import {
+  Button,
+  FormControl,
+  FormErrorMessage,
+  FormLabel,
+  Input,
+} from "@chakra-ui/react";
 
 const EmailInput = () => {
-  // Pass the useFormik() hook initial form values and a submit function that will
-  // be called when the form is submitted
+  const validationSchema = Yup.object().shape({
+    email: Yup.string()
+      .email("Please provide a valid email")
+      .required("Required"),
+  });
+
   const formik = useFormik({
     initialValues: {
       email: "Email Address",
@@ -11,21 +23,27 @@ const EmailInput = () => {
     onSubmit: (values) => {
       alert("Thank you! We will send updates to: " + values.email);
     },
+    validationSchema: validationSchema,
   });
+
   return (
     <form onSubmit={formik.handleSubmit}>
-      <label htmlFor="email">Email Address</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        onChange={formik.handleChange}
-        value={formik.values.email}
-      />
+      <FormControl isValid={formik.touched.email && formik.errors.email}>
+        <FormLabel htmlFor="email">Email Address</FormLabel>
+        <Input
+          id="email"
+          name="email"
+          type="email"
+          // onChange={formik.handleChange}
+          // value={formik.values.email}
+          {...formik.getFieldProps("email")}
+        />
+        <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
+      </FormControl>
 
-      <button type="submit">
+      <Button type="submit">
         <img src="/coming-soon/assets/images/icon-arrow.svg" alt="Submit"></img>
-      </button>
+      </Button>
     </form>
   );
 };
