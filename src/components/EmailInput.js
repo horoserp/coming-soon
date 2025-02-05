@@ -34,7 +34,10 @@ const EmailInput = () => {
           id="email"
           name="email"
           type="email"
-          {...formik.getFieldProps("email")}
+          placeholder="Email Address"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          required
         />
         <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
       </FormControl>
