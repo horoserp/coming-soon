@@ -83,6 +83,11 @@ button {
   border: none;
 }
 
+.error {
+  color: var(--Desaturated-Red);
+  font-weight: 600;
+}
+
 /* Extra small devices [iPhone SE - 375](phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }

@@ -7,6 +7,7 @@ import {
   FormControl,
   FormErrorMessage,
   FormLabel,
+  Image,
   Input,
 } from "@chakra-ui/react";
 
@@ -38,7 +39,7 @@ const EmailInput = () => {
           borderRadius={30}
           w={"100%"}
           h={"55px"}
-          pl={25}
+          pl={30}
         >
           <Input
             className="input"
@@ -53,14 +54,27 @@ const EmailInput = () => {
             onBlur={formik.handleBlur}
             required
           />
+          <div>
+            {formik.errors.email && (
+              <Image
+                src="/coming-soon/assets/images/icon-error.svg"
+                alt="Exlamation point"
+                h={"50%"}
+                mt={12}
+                mr={12}
+              />
+            )}
+          </div>
           <Button type="submit" w={"100px"} h={"100%"} rounded={"30px"}>
-            <img
+            <Image
               src="/coming-soon/assets/images/icon-arrow.svg"
               alt="Submit"
-            ></img>
+            ></Image>
           </Button>
         </Flex>
-        <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
+        <FormErrorMessage className="error" ml={25} mt={10}>
+          {formik.errors.email}
+        </FormErrorMessage>
       </FormControl>
     </form>
   );
