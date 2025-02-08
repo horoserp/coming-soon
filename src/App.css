@@ -67,6 +67,7 @@ h1 {
 
 .formContainer:focus-within {
   outline: 1px solid var(--Desaturated-Red);
+  border: none;
 }
 
 .formContainer.red {
