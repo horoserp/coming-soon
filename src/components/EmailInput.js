@@ -37,14 +37,19 @@ const EmailInput = () => {
           name="email"
           type="email"
           placeholder="Email Address"
+          w={"100%"}
+          h={"55px"}
+          py={"10px"}
+          rounded={"30px"}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           required
+          className="input"
         />
         <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
       </FormControl>
 
-      <Button type="submit">
+      <Button type="submit" w={"100px"} h={"55px"} rounded={"30px"}>
         <img src="/coming-soon/assets/images/icon-arrow.svg" alt="Submit"></img>
       </Button>
     </form>

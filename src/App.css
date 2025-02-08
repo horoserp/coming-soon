@@ -42,6 +42,10 @@ body {
   background-color: black;
 }
 
+h1 {
+  color: var(--Dark-Grayish-Red);
+}
+
 .pink {
   color: var(--Desaturated-Red);
 }
@@ -55,6 +59,21 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.input {
+  border: 1px solid hsla(0, 6%, 24%, 0.2);
+}
+
+::placeholder {
+  color: var(--Dark-Grayish-Red);
+  opacity: 0.2;
+  padding-left: 20px;
+}
+
+button {
+  background-image: linear-gradient(to right, var(--RedA), var(--RedB));
+  border: none;
 }
 
 /* Extra small devices [iPhone SE - 375](phones, 600px and down) */
