@@ -5,7 +5,7 @@ import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 function Card() {
   return (
     <article>
-      <Flex maxH={"800px"}>
+      <Flex maxW={"1440px"} maxH={"800px"}>
         <Box
           bgImage="url(/coming-soon/assets/images/bg-pattern-desktop.svg)"
           bgColor={"white"}
