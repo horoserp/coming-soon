@@ -35,7 +35,7 @@ const EmailInput = () => {
           Email Address
         </FormLabel>
         <Flex
-          className="formContainer"
+          className={`formContainer ${formik.errors.email ? "red" : ""}`}
           borderRadius={30}
           w={"100%"}
           h={"55px"}
@@ -72,7 +72,7 @@ const EmailInput = () => {
             ></Image>
           </Button>
         </Flex>
-        <FormErrorMessage className="error" ml={25} mt={10}>
+        <FormErrorMessage className="error" ml={25} mt={10} fontSize={14}>
           {formik.errors.email}
         </FormErrorMessage>
       </FormControl>
