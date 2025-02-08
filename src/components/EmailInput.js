@@ -29,7 +29,9 @@ const EmailInput = () => {
   return (
     <form onSubmit={formik.handleSubmit}>
       <FormControl isInvalid={formik.touched.email && formik.errors.email}>
-        <FormLabel htmlFor="email">Email Address</FormLabel>
+        <FormLabel htmlFor="email" className="visually-hidden">
+          Email Address
+        </FormLabel>
         <Input
           id="email"
           name="email"

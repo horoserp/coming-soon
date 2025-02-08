@@ -25,6 +25,8 @@
   --WhiteB: hsl(0, 100%, 98%);
   --RedA: hsl(0, 80%, 86%);
   --RedB: hsl(0, 74%, 74%);
+
+  height: 100%;
 }
 
 html {
@@ -33,10 +35,26 @@ html {
 
 body {
   font-family: "Main";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: black;
 }
 
-main {
-  background-color: black;
+.pink {
+  color: var(--Desaturated-Red);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /* Extra small devices [iPhone SE - 375](phones, 600px and down) */

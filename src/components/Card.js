@@ -1,32 +1,51 @@
 import React from "react";
 import EmailInput from "./EmailInput";
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 function Card() {
   return (
-    <article style={{ backgroundColor: "white" }}>
-      <Flex bgImage="url(/coming-soon/assets/images/bg-pattern-desktop.svg)">
-        <div>
+    <article>
+      <Flex maxH={"800px"}>
+        <Box
+          bgImage="url(/coming-soon/assets/images/bg-pattern-desktop.svg)"
+          bgColor={"white"}
+          py={"66px"}
+          pl={"169px"}
+          pr={"220px"}
+        >
           <header>
-            <img
+            <Image
               src="/coming-soon/assets/images/logo.svg"
               alt="Base Apparel Logo"
-            ></img>
+              mb={"138px"}
+            ></Image>
           </header>
-          <Heading>We're coming soon</Heading>
-          <Text>
+          <Heading
+            as={"h1"}
+            fontSize={"45px"}
+            textTransform={"uppercase"}
+            letterSpacing={"10px"}
+            lineHeight={"1.2"}
+            mb={"42px"}
+          >
+            <Text className="pink" fontWeight={"300"}>
+              We're
+            </Text>
+            coming soon
+          </Heading>
+          <Text className="pink" lineHeight={"1.5"} mb={"50px"}>
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </Text>
           <EmailInput />
-        </div>
-        <div>
-          <img
+        </Box>
+        <Box>
+          <Image
             src="/coming-soon/assets/images/hero-desktop.jpg"
             alt="Woman modeling merchandise"
-          ></img>
-        </div>
+          ></Image>
+        </Box>
       </Flex>
     </article>
   );
