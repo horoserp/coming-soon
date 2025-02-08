@@ -67,11 +67,15 @@ h1 {
 
 .formContainer:focus-within {
   outline: 1px solid var(--Desaturated-Red);
+}
+
+.formContainer:focus-within.formContainer {
   border: none;
 }
 
 .formContainer.red {
-  outline: 1px solid var(--Soft-Red);
+  outline: 2px solid var(--Soft-Red);
+  border: none;
 }
 
 .input:focus {
