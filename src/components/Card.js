@@ -23,7 +23,7 @@ function Card() {
           </header>
           <Heading
             as={"h1"}
-            fontSize={45}
+            fontSize={50}
             fontWeight={600}
             textTransform={"uppercase"}
             letterSpacing={10}
