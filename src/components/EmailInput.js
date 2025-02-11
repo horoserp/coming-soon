@@ -69,7 +69,7 @@ const EmailInput = () => {
           <Button
             className="button"
             type="submit"
-            w={"100px"}
+            w={140}
             h={"100%"}
             rounded={30}
           >
