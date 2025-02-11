@@ -67,8 +67,12 @@ h1 {
   border: none;
 }
 
-.input:focus {
-  outline: none;
+.input:focus-visible,
+.input[aria-invalid="true"],
+.input[data-invalid] {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 ::placeholder {
@@ -76,8 +80,12 @@ h1 {
   opacity: 0.2;
 }
 
-button {
-  background-image: linear-gradient(to right, var(--RedA), var(--RedB));
+.button {
+  background-image: linear-gradient(
+    to right,
+    var(--RedA),
+    var(--RedB)
+  ) !important;
   border: none;
 }
 

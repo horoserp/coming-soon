@@ -39,7 +39,7 @@ const EmailInput = () => {
           className={`formContainer ${formik.errors.email ? "red" : ""}`}
           borderRadius={30}
           w={"100%"}
-          h={"55px"}
+          h={55}
           pl={30}
         >
           <Input
@@ -48,7 +48,7 @@ const EmailInput = () => {
             name="email"
             type="email"
             placeholder="Email Address"
-            py={10}
+            py={7}
             border={"none"}
             flexGrow={2}
             onChange={formik.handleChange}
@@ -66,7 +66,13 @@ const EmailInput = () => {
               />
             )}
           </div>
-          <Button type="submit" w={"100px"} h={"100%"} rounded={"30px"}>
+          <Button
+            className="button"
+            type="submit"
+            w={"100px"}
+            h={"100%"}
+            rounded={30}
+          >
             <Image
               src="/coming-soon/assets/images/icon-arrow.svg"
               alt="Submit"
