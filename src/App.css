@@ -77,7 +77,7 @@ h1 {
 
 ::placeholder {
   color: var(--Dark-Grayish-Red);
-  opacity: 0.2;
+  opacity: 0.3;
   transform: translateY(-1px);
 }
 
