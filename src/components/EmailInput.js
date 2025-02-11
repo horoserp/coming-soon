@@ -66,7 +66,6 @@ const EmailInput = () => {
               />
             )}
           </div>
-          {/* TODO: Add box-shadow to button */}
           <Button
             className="button"
             type="submit"
