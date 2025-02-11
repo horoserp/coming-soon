@@ -87,7 +87,7 @@ h1 {
     var(--RedB)
   ) !important;
   border: none;
-  box-shadow: 0 15px 50px 0px var(--Desaturated-Red);
+  box-shadow: 0 15px 50px -10px var(--Desaturated-Red);
 }
 
 .error {
