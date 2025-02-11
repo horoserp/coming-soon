@@ -61,8 +61,8 @@ const EmailInput = () => {
                 src="/coming-soon/assets/images/icon-error.svg"
                 alt="Exlamation point"
                 h={"50%"}
-                mt={12}
-                mr={12}
+                mt={3.5}
+                mr={8}
               />
             )}
           </div>
