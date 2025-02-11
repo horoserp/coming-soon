@@ -9,6 +9,7 @@ import {
   FormLabel,
   Image,
   Input,
+  VisuallyHidden,
 } from "@chakra-ui/react";
 
 const EmailInput = () => {
@@ -31,9 +32,9 @@ const EmailInput = () => {
   return (
     <form onSubmit={formik.handleSubmit}>
       <FormControl isInvalid={formik.touched.email && formik.errors.email}>
-        <FormLabel htmlFor="email" className="visually-hidden">
-          Email Address
-        </FormLabel>
+        <VisuallyHidden>
+          <FormLabel htmlFor="email">Email Address</FormLabel>
+        </VisuallyHidden>
         <Flex
           className={`formContainer ${formik.errors.email ? "red" : ""}`}
           borderRadius={30}
