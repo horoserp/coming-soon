@@ -78,6 +78,7 @@ h1 {
 ::placeholder {
   color: var(--Dark-Grayish-Red);
   opacity: 0.2;
+  transform: translateY(-1px);
 }
 
 .button {
