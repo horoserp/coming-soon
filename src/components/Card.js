@@ -45,7 +45,7 @@ function Card() {
         <Box>
           <Image
             h={800}
-            w={610}
+            minW={610}
             src="/coming-soon/assets/images/hero-desktop.jpg"
             alt="Woman modeling merchandise"
           ></Image>
