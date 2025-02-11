@@ -4,8 +4,12 @@ import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 function Card() {
   return (
-    <article>
-      <Flex maxW={"1440px"} maxH={"800px"}>
+    <Box as="article">
+      <Flex
+        maxW={"1440px"}
+        maxH={"800px"}
+        direction={{ base: "column", lg: "row" }}
+      >
         <Box
           bgImage="url(/coming-soon/assets/images/bg-pattern-desktop.svg)"
           bgColor={"white"}
@@ -48,7 +52,7 @@ function Card() {
           ></Image>
         </Box>
       </Flex>
-    </article>
+    </Box>
   );
 }
 
