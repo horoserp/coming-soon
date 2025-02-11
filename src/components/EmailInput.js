@@ -79,7 +79,7 @@ const EmailInput = () => {
             ></Image>
           </Button>
         </Flex>
-        <FormErrorMessage className="error" ml={25} mt={10} fontSize={14}>
+        <FormErrorMessage className="error" ml={45} mt={2} fontSize={14}>
           {formik.errors.email}
         </FormErrorMessage>
       </FormControl>
