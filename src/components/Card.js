@@ -5,40 +5,37 @@ import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 function Card() {
   return (
     <Box as="article">
-      <Flex
-        maxW={"1440px"}
-        maxH={"800px"}
-        direction={{ base: "column", lg: "row" }}
-      >
+      <Flex maxW={1440} maxH={800} direction={{ base: "column", lg: "row" }}>
         <Box
           bgImage="url(/coming-soon/assets/images/bg-pattern-desktop.svg)"
           bgColor={"white"}
-          py={"66px"}
-          pl={"169px"}
-          pr={"220px"}
+          maxW={830}
+          py={66}
+          pl={169}
+          pr={220}
         >
           <header>
             <Image
               src="/coming-soon/assets/images/logo.svg"
               alt="Base Apparel Logo"
-              mb={"138px"}
+              mb={138}
             ></Image>
           </header>
           <Heading
             as={"h1"}
-            fontSize={"45px"}
-            fontWeight={"600"}
+            fontSize={45}
+            fontWeight={600}
             textTransform={"uppercase"}
-            letterSpacing={"10px"}
-            lineHeight={"1.2"}
-            mb={"42px"}
+            letterSpacing={10}
+            lineHeight={1.2}
+            mb={42}
           >
-            <Text className="pink" fontWeight={"300"}>
+            <Text className="pink" fontWeight={300}>
               We're
             </Text>
             coming soon
           </Heading>
-          <Text className="pink" lineHeight={"1.5"} mb={"50px"}>
+          <Text className="pink" lineHeight={1.5} mb={50}>
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
@@ -47,6 +44,8 @@ function Card() {
         </Box>
         <Box>
           <Image
+            h={800}
+            w={610}
             src="/coming-soon/assets/images/hero-desktop.jpg"
             alt="Woman modeling merchandise"
           ></Image>
