@@ -10,24 +10,35 @@ function Card() {
           bgImage="url(/coming-soon/assets/images/bg-pattern-desktop.svg)"
           bgColor={"white"}
           maxW={830}
-          py={66}
-          pl={169}
-          pr={220}
+          py={{ base: 10, lg: 66 }}
+          pl={{ base: 0, lg: 169 }}
+          pr={{ base: 0, lg: 220 }}
         >
           <header>
             <Image
               src="/coming-soon/assets/images/logo.svg"
               alt="Base Apparel Logo"
-              mb={138}
+              mb={{ base: 10, lg: 138 }}
+              ml={{ base: 10, lg: 0 }}
             ></Image>
           </header>
+          <Box>
+            <Image
+              display={{ base: "block", lg: "none" }}
+              maxW={375}
+              mb={20}
+              src="/coming-soon/assets/images/hero-mobile.jpg"
+              alt="Woman modeling merchandise"
+            ></Image>
+          </Box>
           <Heading
             as={"h1"}
             fontSize={50}
             fontWeight={600}
             textTransform={"uppercase"}
             letterSpacing={10}
-            lineHeight={1.2}
+            lineHeight={{ base: 1, lg: 1.2 }}
+            textAlign={{ base: "center", lg: "left" }}
             mb={42}
           >
             <Text className="pink" fontWeight={300}>
@@ -35,7 +46,13 @@ function Card() {
             </Text>
             coming soon
           </Heading>
-          <Text className="pink" lineHeight={1.5} mb={50}>
+          <Text
+            className="pink"
+            lineHeight={1.5}
+            px={{ base: 5, lg: 0 }}
+            mb={50}
+            textAlign={{ base: "center", lg: "left" }}
+          >
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
@@ -44,6 +61,7 @@ function Card() {
         </Box>
         <Box>
           <Image
+            display={{ base: "none", lg: "block" }}
             h={800}
             minW={610}
             src="/coming-soon/assets/images/hero-desktop.jpg"
