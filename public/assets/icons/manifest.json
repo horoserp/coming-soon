@@ -17,14 +17,14 @@
   ],
   "screenshots": [
     {
-      "src": "https://horoserp.github.io/coming-soon/assets/images/desktop-design.jpg",
+      "src": "https://horoserp.github.io/coming-soon/assets/images/desktop-screenshot.jpeg",
       "sizes": "1440x800",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Coming Soon Desktop"
     },
     {
-      "src": "https://horoserp.github.io/coming-soon/assets/images/mobile-design.jpg",
+      "src": "https://horoserp.github.io/coming-soon/assets/images/mobile-screenshot.jpeg",
         "sizes": "375x800",
         "type": "image/png",
         "form_factor": "narrow",
