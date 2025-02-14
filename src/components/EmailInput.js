@@ -72,7 +72,7 @@ const EmailInput = () => {
             className="button"
             id="button"
             type="submit"
-            w={140}
+            w={{ base: 20, md: 120, lg: 140 }}
             h={"100%"}
             rounded={30}
           >
