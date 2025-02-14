@@ -10,7 +10,7 @@ function Card() {
           bgImage="url(/coming-soon/assets/images/bg-pattern-desktop.svg)"
           bgColor={"white"}
           maxW={830}
-          py={{ base: 10, lg: 66 }}
+          py={{ base: 7, lg: 66 }}
           pl={{ base: 0, lg: 169 }}
           pr={{ base: 0, lg: 220 }}
         >
@@ -19,7 +19,7 @@ function Card() {
               src="/coming-soon/assets/images/logo.svg"
               alt="Base Apparel Logo"
               w={120}
-              mb={{ base: 10, lg: 138 }}
+              mb={{ base: 7, lg: 138 }}
               ml={{ base: 10, lg: 0 }}
             ></Image>
           </header>
@@ -27,7 +27,7 @@ function Card() {
             <Image
               display={{ base: "block", lg: "none" }}
               maxW={375}
-              mb={20}
+              mb={10}
               src="/coming-soon/assets/images/hero-mobile.jpg"
               alt="Woman modeling merchandise"
             ></Image>
@@ -40,7 +40,7 @@ function Card() {
             letterSpacing={10}
             lineHeight={{ base: 1, lg: 1.2 }}
             textAlign={{ base: "center", lg: "left" }}
-            mb={42}
+            mb={{ base: "26px", lg: 42 }}
           >
             <Text className="pink" fontWeight={300}>
               We're

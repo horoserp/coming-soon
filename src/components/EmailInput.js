@@ -2,6 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import {
+  Box,
   Button,
   Flex,
   FormControl,
@@ -84,6 +85,7 @@ const EmailInput = () => {
         <FormErrorMessage className="error" ml={45} mt={2} fontSize={14}>
           {formik.errors.email}
         </FormErrorMessage>
+        <Box mb={"30px"} />
       </FormControl>
     </form>
   );
