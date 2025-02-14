@@ -68,6 +68,7 @@ const EmailInput = () => {
           </div>
           <Button
             className="button"
+            id="button"
             type="submit"
             w={140}
             h={"100%"}

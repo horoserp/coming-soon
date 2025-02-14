@@ -39,7 +39,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: black !important;
+  background-color: black;
 }
 
 h1 {
@@ -67,12 +67,12 @@ h1 {
   border: none;
 }
 
-.input:focus-visible,
-.input[aria-invalid="true"],
-.input[data-invalid] {
-  outline: none !important;
-  border: none !important;
-  box-shadow: none !important;
+#email.input:focus-visible,
+#email.input[aria-invalid="true"],
+#email.input[data-invalid] {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 
 ::placeholder {
@@ -81,14 +81,14 @@ h1 {
   transform: translateY(-1px);
 }
 
-.button {
-  background-image: linear-gradient(
-    to right,
-    var(--RedA),
-    var(--RedB)
-  ) !important;
+#button.button {
+  background-image: linear-gradient(to right, var(--RedA), var(--RedB));
   border: none;
   box-shadow: 0 15px 50px -10px var(--Desaturated-Red);
+}
+
+#button.button:active {
+  background-image: linear-gradient(to right, var(--RedA), var(--RedA));
 }
 
 .error {
