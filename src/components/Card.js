@@ -18,6 +18,7 @@ function Card() {
             <Image
               src="/coming-soon/assets/images/logo.svg"
               alt="Base Apparel Logo"
+              w={120}
               mb={{ base: 10, lg: 138 }}
               ml={{ base: 10, lg: 0 }}
             ></Image>

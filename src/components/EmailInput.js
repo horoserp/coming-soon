@@ -38,9 +38,10 @@ const EmailInput = () => {
         <Flex
           className={`formContainer ${formik.errors.email ? "red" : ""}`}
           borderRadius={30}
-          w={"100%"}
+          w={{ base: "90%", lg: "100%" }}
           h={55}
           pl={30}
+          ml={{ base: 5, lg: 0 }}
         >
           <Input
             className="input"
