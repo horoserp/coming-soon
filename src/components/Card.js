@@ -23,7 +23,7 @@ function Card() {
               ml={{ base: 10, lg: 0 }}
             ></Image>
           </header>
-          <Box>
+          <Flex justifyContent={"center"}>
             <Image
               display={{ base: "block", lg: "none" }}
               maxW={375}
@@ -31,7 +31,7 @@ function Card() {
               src="/coming-soon/assets/images/hero-mobile.jpg"
               alt="Woman modeling merchandise"
             ></Image>
-          </Box>
+          </Flex>
           <Heading
             as={"h1"}
             fontSize={50}
