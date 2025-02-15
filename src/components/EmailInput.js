@@ -22,7 +22,7 @@ const EmailInput = () => {
 
   const formik = useFormik({
     initialValues: {
-      email: "Email Address",
+      email: "",
     },
     onSubmit: (values) => {
       alert("Thank you! We will send updates to: " + values.email);
@@ -75,6 +75,7 @@ const EmailInput = () => {
             w={{ base: 20, md: 120, lg: 140 }}
             h={"100%"}
             rounded={30}
+            disabled={formik.values.email === ""}
           >
             <Image
               src="/coming-soon/assets/images/icon-arrow.svg"
