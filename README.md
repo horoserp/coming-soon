@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile](./assets/images/mobile-screenshot.jpeg)
-![Desktop](./assets/images/desktop-screenshot.jpeg)
+![Mobile](.public/assets/images/mobile-screenshot.jpeg)
+![Desktop](.public/assets/images/desktop-screenshot.jpeg)
 
 ### Links
 
