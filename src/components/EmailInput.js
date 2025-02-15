@@ -17,6 +17,7 @@ const EmailInput = () => {
   const validationSchema = Yup.object().shape({
     email: Yup.string()
       .email("Please provide a valid email")
+      .min(1, "Required")
       .required("Required"),
   });
 
@@ -75,7 +76,6 @@ const EmailInput = () => {
             w={{ base: 20, md: 120, lg: 140 }}
             h={"100%"}
             rounded={30}
-            disabled={formik.values.email === ""}
           >
             <Image
               src="/coming-soon/assets/images/icon-arrow.svg"
